@@ -304,12 +304,14 @@ public class LoopView extends View {
             stringBuffer.append(String.valueOf(bt));
         }
         String string = "";
-        if(array.length != stringBuffer.toString().toCharArray().length){
-            string = stringBuffer.toString() + "...";
-        }
-        else{
-            string = text;
-        }
+//         if(array.length != stringBuffer.toString().toCharArray().length){
+//             string = stringBuffer.toString() + "...";
+//         }
+//         else{
+//             string = text;
+//         }
+                    string = text;
+
         canvas.drawText(string, posX, posY, paint);
     }
 
